@@ -24,9 +24,9 @@ class Yatzee:
             numbers.append(random.randint(1,6))
         self.dice_eyes = numbers
 
-    def check_knumbers(self, Knumbers):
+    def check_knumbers(self, k_numbers):
         new_numbers = []
-        for number in Knumbers:
+        for number in k_numbers:
             new_numbers.append(int(number))
         return all(x in self.dice_eyes for x in new_numbers)
 
